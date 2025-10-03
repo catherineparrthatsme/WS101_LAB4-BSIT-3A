@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "type": "Running",
+    "duration": 30,
+    "calories": 300,
+    "date": "2023-11-01"
+  },
+  {
+    "id": "2",
+    "type": "Cycling",
+    "duration": 45,
+    "calories": 400,
+    "date": "2023-11-02"
+  },
+  {
+    "id": "3",
+    "type": "Swimming",
+    "duration": 60,
+    "calories": 500,
+    "date": "2023-11-03"
+  },
+  {
+    "id": "4",
+    "type": "Yoga",
+    "duration": 20,
+    "calories": 100,
+    "date": "2023-11-04"
+  },
+  {
+    "id": "5",
+    "type": "Running",
+    "duration": 25,
+    "calories": 250,
+    "date": "2023-11-05"
+  },
+  {
+    "id": "6",
+    "type": "Cycling",
+    "duration": 50,
+    "calories": 450,
+    "date": "2023-11-06"
+  },
+  {
+    "id": "7",
+    "type": "Swimming",
+    "duration": 35,
+    "calories": 350,
+    "date": "2023-11-07"
+  }
+]

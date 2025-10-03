@@ -3,71 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Fitness Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .section { margin-bottom: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 5px 0; }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <h1>CATHERINE G. CASINAS</h1>
-        <p>YOUR DESIGNATION</p>
-        <div class="pictures"></div>
+    <h1>Fitness Tracker</h1>
+
+    <div class="section">
+        <h2>Total Calories Burned: <span id="total-calories">0</span></h2>
     </div>
-    <div class="address">
-        <div class="add">
-            <p>09707165943</p>
-            <p>Bobon Northern Samar</p>
-        </div>
-        <div class="email">
-            <p>catherinecasinas@gmail.com</p>
-            <p>www.facebook.com</p>
-        </div>
+
+    <div class="section">
+        <label for="filter-type">Filter by Type:</label>
+        <select id="filter-type">
+            <option value="all">All</option>
+            <option value="Running">Running</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Yoga">Yoga</option>
+        </select>
     </div>
-    <div class="details">
-        <div class="about">
-            <h3>ABOUT ME</h3>
-            <p>I am a passionate and creative web designer with a strong interest in user experience and modern web technologies. With hands-on experience in developing responsive and visually engaging websites, I bring both technical skills and artistic vision to every project. I am eager to grow as a designer, collaborate with teams, and continuously learn new tools and trends in the ever-evolving digital space.</p>
-            <h3> AWARD</h3>
-            <ul>
-                <li>Code & Creativity Fusion Award</li>
-                <li>UX Visionary Award</li>
-                <li>Pixel Perfection Award</li>
-            </ul>
-            <h3> Skills</h3>
-            <section class="level">
-                <label for="html">HTML</label>
-                <input type="range" id="html">
-                <br>
-                <label for="css">CSS</label>
-                <label type="range">
-                <br>
-            </section>
-        </div>
-        <div class="job">
-            <h3>WORK EXPERIENCES</h3>
-            <p><ul>
-            <li>Junior Web Designer in a small company</li>
-            <ul>
-                <li>I improve my skill in developing websites</li>
-                <li>Gained experience working with design tools like Adobe XD</li>
-                <li>Collaborated with my co-developers</li>
-            </ul>
-            </ul></p>
-            <h3>EDUCATION</h3>
-            <p><b>Primary School</b></p>
-                <ul>
-                    <li>Graduated at Bobon Central Elementary School</li>
-                </ul>
-                <p><b>Secondary</b></p>
-                <ul>
-                    <li>Finished junior highschool at Eladio T. Balite Memorial School of Fisheries</li>
-                    <li>Graduated at Eladio T. Balite Memorial SChool of Fisheries</li>               
-                 </ul>
-                 <p><b>Tertiary Education</b></p>
-                 <ul>
-                    <li>Started studying at University of Eastern Philippines</li> 
-                    <li>Graduated at the University of Eastern Philippines with a bachelor's degree in Information Technology</li>
-                 </ul>
-        </div>
+
+    <div class="section">
+        <h2>Workouts</h2>
+        <ul id="workout-list"></ul>
     </div>
+
+    <div class="section">
+        <h2>Longest Workout</h2>
+        <div id="longest-workout"></div>
+    </div>
+
+    <div class="section">
+        <h2>Workouts Grouped by Week</h2>
+        <div id="weekly-groups"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
